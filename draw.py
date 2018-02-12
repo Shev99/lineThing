@@ -8,12 +8,11 @@ def draw_line( x0, y0, x1, y1, screen, color ):
 
     d = (2 * A) + B #simplified formula for distance 
     while x <= x1:
-        plot(x,y)
-        x++
+        plot(screen,color,x,y)
         if d > 0:
-            y++
+            y+=1
             d+=2 * B
-        x++
+        x+=1
         d+=2 * A
 
     
